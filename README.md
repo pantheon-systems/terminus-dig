@@ -4,26 +4,36 @@
 
 A Terminus plugin for inspecting DNS records.
 
-## Examples
+## For appservers or dbservers
 
-If `--domain` is not provided the script will default to appserver SFTP hostname.
+To get the appserver IP address:
+```
+terminus dig:server <site>.<env>
+```
+
+To get the dbserver IP address:
+```
+terminus dig:server <site>.<env> --server=dbserver
+```
+
+## For domains
 
 To get the A record (default):
 ```
-terminus dig <site>.<env>
+terminus dig:domain --domain=pantheon.io
 ```
 
 To get the AAAA records:
 ```
-terminus dig <site>.<env> --domain=domain.com --type=AAAA
+terminus dig:domain --domain=domain.com --type=AAAA
 ```
 
 To get the custom domain CNAME:
 ```
-terminus dig <site>.<env> --domain=google.com --type=CNAME
+terminus dig:domain --domain=google.com --type=CNAME
 ```
 
 To get the custom domain MX:
 ```
-terminus dig <site>.<env> --domain=google.com --type=MX
+terminus dig:domain --domain=google.com --type=MX
 ```
