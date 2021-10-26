@@ -187,7 +187,7 @@ class DigCommand extends TerminusCommand implements SiteAwareInterface
                         }
                         break;
                     default:
-                        $this->log()->notice('Invalid type');
+                        $this->log()->error('Invalid type');
                 }
             }
         }
@@ -276,7 +276,7 @@ class DigCommand extends TerminusCommand implements SiteAwareInterface
                     }
                     break;
                 default:
-                    $this->log()->notice('Invalid type');
+                    $this->log()->error('Invalid type');
             }
         }
     }

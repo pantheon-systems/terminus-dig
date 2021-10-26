@@ -16,6 +16,11 @@ To get the dbserver IP address:
 terminus dig:server <site>.<env> --server=dbserver
 ```
 
+To get the first IP address only:
+```
+terminus dig:server <site>.<env> | head -n 1
+```
+
 ## For domains
 
 To get the A record (default):
