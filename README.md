@@ -1,5 +1,7 @@
 # Digger
 
+[![Unsupported](https://img.shields.io/badge/Pantheon-Unsupported-yellow?logo=pantheon&color=FFDC28)](https://pantheon.io/docs/oss-support-levels#unsupported)
+
 [![Terminus v1.x Compatible](https://img.shields.io/badge/terminus-v1.x-green.svg)](https://github.com/pantheon-systems/terminus-dig/tree/1.x)
 
 A Terminus plugin for inspecting DNS records.
