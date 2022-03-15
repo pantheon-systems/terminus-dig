@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-systems/terminus-dig",
+    "name": "geraldvillorente/terminus-dig",
     "description": "Get the server public IP address.",
     "type": "terminus-plugin",
     "license": "MIT",

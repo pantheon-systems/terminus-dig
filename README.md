@@ -42,3 +42,20 @@ To get the custom domain MX:
 ```
 terminus dig:domain --domain=google.com --type=MX
 ```
+
+## Installation
+
+For Terminus 2 and below, you can install like this:
+```
+$ cd ~/.terminus/plugins
+$ git clone https://github.com/pantheon-systems/terminus-dig.git
+```
+For Terminus 3, you can install like this:
+```
+$ terminus self:plugin:install geraldvillorente/terminus-dig
+```
+Or like this:
+```
+$ git clone https://github.com/pantheon-systems/terminus-dig.git
+$ terminus self:plugin:install terminus-dig
+```
